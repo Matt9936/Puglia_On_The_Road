@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ActIscrizione"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/trulli_1"
+    android:backgroundTint="#49C9C9C9"
+    android:backgroundTintMode="src_over"
+    android:foregroundTint="#FFFFFF">
+
+    <!-- questo è un commento; non puoi usarlo nei tag (tra < e />) -->
+
+    <TextView
+        android:id="@+id/Benvenuto"
+        android:layout_width="wrap_content"
+        android:layout_height="111dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/allura"
+        android:text="Benvenuto\nIscriviti"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textSize="42sp"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="9dp"
+        android:layout_alignParentLeft="true" />
+
+    <ImageView
+        android:id="@+id/LogoIscrizione"
+        android:layout_width="132dp"
+        android:layout_height="108dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="2dp"
+        app:srcCompat="@drawable/logo_alfa"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="-5dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="2dp" />
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="158dp"
+        android:layout_marginEnd="61dp"
+        android:ems="10"
+        android:hint="E-Mail"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#000000"
+        android:layout_marginRight="61dp"
+        android:layout_alignParentRight="true" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/email"
+        android:layout_alignBottom="@+id/email"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="-70dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textColorHint="#000000"
+        android:layout_alignRight="@+id/email"
+        android:layout_marginRight="0dp" />
+
+    <EditText
+        android:id="@+id/writePassword"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/email"
+        android:layout_alignBottom="@+id/username"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="-70dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="#000000"
+        android:layout_marginRight="0dp"
+        android:layout_alignRight="@+id/email" />
+
+    <EditText
+        android:id="@+id/confirmPassword"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/email"
+        android:layout_alignBottom="@+id/writePassword"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="-70dp"
+        android:ems="10"
+        android:hint="Conferma password"
+        android:inputType="textPassword"
+        android:textColorHint="#000000"
+        android:layout_marginRight="0dp"
+        android:layout_alignRight="@+id/email" />
+
+    <!-- android:inputType="textCapSentences" //
+    se non lo uoi tutto maiuscolo -->
+
+    <Button
+        android:id="@+id/annullaIscrizione"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="26dp"
+        android:backgroundTint="#CAC10000"
+        android:text="Annulla"
+         />
+
+    <Button
+        android:id="@+id/conferma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/annullaIscrizione"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="65dp"
+        android:layout_marginBottom="0dp"
+        android:backgroundTint="#20BB00"
+        android:text="Conferma"
+        android:onClick="creaProfilo"
+        />
+
+
+    <RadioGroup
+        android:id="@+id/chooseType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBottom="@+id/confirmPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-55dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="isTourist"
+            android:text="Turista"
+            android:textColor="#000000"
+            android:textColorHighlight="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="4mm"
+            android:layout_height="1mm"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/radioGestore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="isManager"
+            android:text="Gestore"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/finishMex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="200dp"
+        android:layout_marginRight="200dp"
+        android:layout_marginBottom="118dp"
+        android:fontFamily="@font/iceland"
+        android:text=""
+        android:textColor="#FF0000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/goToLogIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/chooseType"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-49dp"
+        android:onClick="goToLogIn"
+        android:text="Hai già un account? Effettua il log in"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

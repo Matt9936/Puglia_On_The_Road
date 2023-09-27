@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+
+    android:backgroundTint="#00FFFFFF"
+    android:backgroundTintMode="add"
+    tools:context=".MenuLocali">
+
+    <ListView
+        android:id="@+id/listaLocali"
+        android:layout_width="match_parent"
+        android:layout_height="621dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="101dp"
+        android:layout_marginBottom="9dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/intestMenuLocali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="54dp"
+        android:layout_toStartOf="@+id/homeButton"
+        android:fontFamily="sans-serif"
+        android:text="Menu Locali"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:onClick="goToEditLocali"/>
+
+    <ImageButton
+        android:id="@+id/homeButton"
+        android:layout_width="48dp"
+        android:layout_height="43dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="19dp"
+        android:layout_toStartOf="@+id/vediLuoghi"
+        android:onClick="goToHome"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/home_icon" />
+
+    <Button
+        android:id="@+id/vediLuoghi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="14dp"
+        android:backgroundTint="#4CAF50"
+        android:onClick="visualizza"
+        android:text="ELIMINA" />
+
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:backgroundTint="#49C9C9C9"
+    android:backgroundTintMode="src_over"
+    android:foregroundTint="#FFFFFF"
+    tools:context="visualizzaAttivita">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView9"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:text="IL TUO ITINERARIO"
+        android:textColor="#021375"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="10dp"
+        android:background="#002C387A"
+        android:scaleType="fitXY"
+        android:tint="#000000"
+        app:srcCompat="@drawable/abc_vector_test" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/logo_alfa" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        app:srcCompat="@drawable/user_icon" />
+
+    <ImageButton
+        android:id="@+id/backtoCalendar2"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="10dp"
+        android:background="#007A2C2C"
+        android:scaleType="fitXY"
+        android:tint="#000000"
+        app:srcCompat="@android:drawable/ic_menu_today"
+        android:onClick="goToCalendario"/>
+
+    <ListView
+        android:id="@+id/listViewAttivita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1" >
+
+
+    </ListView>
+
+
+</RelativeLayout>

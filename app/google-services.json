@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "624293638871",
+    "project_id": "pugliaontheroad-70ef6",
+    "storage_bucket": "pugliaontheroad-70ef6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:624293638871:android:4581c64db57ea9266f3692",
+        "android_client_info": {
+          "package_name": "com.example.pugliaontheroad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "624293638871-i4d0jrns0eq69nt6djccpcpuud1l7umn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDW3smsAwo91DkhGmQuU0XC_e2XcofZ-t4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "624293638871-i4d0jrns0eq69nt6djccpcpuud1l7umn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
